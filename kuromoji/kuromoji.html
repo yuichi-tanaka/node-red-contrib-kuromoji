@@ -1,0 +1,24 @@
+<script type="text/javascript">
+RED.nodes.registerType('morphological_analyzer',{
+  category: 'analysis',
+  defaults: {
+    dictionaly_dir: { value: "" }
+  },
+  inputs: 1,
+  outputs: 1,
+  align: "right",
+  color: "#cccccc",
+  icon: "arrow-in.png",
+  label: function(){
+    return this.name || "morphological_analyzer";
+  }
+});
+</script>
+<script type="text/x-red" data-template-name="morphological_analyzer">
+<div class="form-row">
+  <label for="node-input-dictionaly_dir"><i class="icon-tag"></i>dictionaly_dir</label>
+  <input type="text" id="node-input-dictionaly_dir"  placeholder="dictionaly_dir">
+</div>
+</script>
+<script type="text/x-red" data-help-name="morphological_analyzer">
+</script>
