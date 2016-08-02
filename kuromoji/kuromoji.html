@@ -6,7 +6,7 @@ RED.nodes.registerType('morphological_analyzer',{
   },
   inputs: 1,
   outputs: 1,
-  align: "right",
+  align: "left",
   color: "#cccccc",
   icon: "arrow-in.png",
   label: function(){
@@ -21,4 +21,10 @@ RED.nodes.registerType('morphological_analyzer',{
 </div>
 </script>
 <script type="text/x-red" data-help-name="morphological_analyzer">
+A Node-RED node for tokenize of <a href="http://www.atilika.org/">Kuromoji</a>.
+Kuromoji is an open source Japanese morphological analyzer written in Java.
+
+Analyses the msg.origin and adds a msg.result object that contains the resulting Kuromoji Tokenize.
+See <a href="https://github.com/takuyaa/kuromoji.js">the kuromoji.js document here.</a>
+
 </script>
